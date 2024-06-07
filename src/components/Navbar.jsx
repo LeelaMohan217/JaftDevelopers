@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center flex-shrink-0">
             <img className="h-14 w-16 mr-2" src={logo} alt="logo" />
             <span className="text-xl hidden sm:block tracking-tight">
-              Jest Developers
+              Jaft Developers
             </span>
           </div>
           <ul className="hidden lg:flex ml-12 space-x-14">

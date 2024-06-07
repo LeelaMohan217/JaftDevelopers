@@ -26,7 +26,7 @@ import { PanelsTopLeft } from "lucide-react";
 
 export const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  // { label: "About", href: "/about" },
   { label: "Businessman", href: "/businessman" },
   { label: "Student", href: "/student" },
   { label: "Blog", href: "/blog" },

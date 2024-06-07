@@ -194,7 +194,7 @@ const StudentForm = () => {
               />
             </div>
           </div>
-          <div className="mb-4">
+          <div>
             <label
               htmlFor="pdf-file"
               className="block text-white font-medium mb-2"
@@ -211,7 +211,7 @@ const StudentForm = () => {
             />
             <small className="text-gray-500">Please upload a PDF file.</small>
           </div>
-          <div className="mt-6">
+          <div>
             <button
               type="submit"
               className="w-full md:w-40 bg-red-700 py-3 px-4 rounded-md  text-center hover:bg-red-800 focus:outline-none focus:bg-red-800 float-end  text-white"
