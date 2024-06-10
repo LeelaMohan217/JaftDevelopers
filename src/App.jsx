@@ -6,6 +6,7 @@ import Businessman from "./pages/Businessman";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               </>
             }
           />
+          <Route path="/about" element={<About />} />
           <Route path="/businessman" element={<Businessman />} />
           <Route path="/student" element={<Student />} />
           <Route path="/blog" element={<Blog />} />

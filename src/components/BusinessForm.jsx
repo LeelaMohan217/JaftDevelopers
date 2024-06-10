@@ -1,19 +1,27 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { motion } from "framer-motion";
+import fadeIn from "../variants";
 
 const BusinessForm = () => {
   return (
-    <div className="grid md:grid-cols-3 gap-10 mx-auto my-10 overflow-hidden shadow-md">
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: true, amount: 0.7 }}
+      className="grid md:grid-cols-3 md:gap-10 mx-auto my-4 md:my-10 overflow-hidden shadow-md"
+    >
       <div className="flex flex-col col-span-1">
         <div>
-          <h2 className="text-xl font-semibold mb-8">Personal Information</h2>
-          <p className="font-thin">
+          <h2 className="text-xl font-semibold">Personal Information</h2>
+          <p className="font-thin text-sm ">
             Use a permanent address where you can receive mail.
           </p>
         </div>
       </div>
       <div className="col-span-2">
-        <h1 className="text-xl font-semibold mb-8 text-white">Contact Form</h1>
+        <h1 className="text-xl font-semibold mb-4 text-white">Contact Form</h1>
         <Formik
           initialValues={{
             first_name: "",
@@ -97,7 +105,7 @@ const BusinessForm = () => {
                 />
               </div>
             </div>
-            <div className="mb-8">
+            <div className="mb-4">
               <label
                 htmlFor="email"
                 className="block text-white font-medium mb-2"
@@ -283,10 +291,10 @@ const BusinessForm = () => {
                 />
               </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-6 flex justify-end md:justify-start">
               <button
                 type="submit"
-                className="w-full md:w-40 bg-red-700 py-3 px-4 rounded-md text-center hover:bg-red-800 focus:outline-none focus:bg-red-800 float-end text-white"
+                className="w-full md:w-40 bg-red-700 py-3 px-4 rounded-md text-center hover:bg-red-800 focus:outline-none focus:bg-red-800 text-white"
               >
                 Submit
               </button>
@@ -294,7 +302,7 @@ const BusinessForm = () => {
           </Form>
         </Formik>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

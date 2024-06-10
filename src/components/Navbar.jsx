@@ -22,12 +22,12 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-xl">
       <div className="container px-8 sm:px-20 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
-          <div className="flex items-center flex-shrink-0">
+          <Link to="/" className="flex items-center flex-shrink-0">
             <img className="h-14 w-16 mr-2" src={logo} alt="logo" />
             <span className="text-xl hidden sm:block tracking-tight">
               Jaft Developers
             </span>
-          </div>
+          </Link>
           <ul className="hidden lg:flex ml-12 space-x-14">
             {navItems.map((item, index) => (
               <li

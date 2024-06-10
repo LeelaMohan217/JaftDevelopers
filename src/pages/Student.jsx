@@ -1,5 +1,7 @@
 import StudentForm from "../components/StudentForm";
 import { studentData } from "../constants";
+import { motion } from "framer-motion";
+import fadeIn from "../variants";
 
 const Student = () => {
   return (
@@ -10,7 +12,13 @@ const Student = () => {
             Our Services
           </span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
+        >
           {studentData.map((data, index) => (
             <div
               key={index}
@@ -28,12 +36,18 @@ const Student = () => {
               <p className="mt-2 md:mt-4 font-thin text-center">{data.text}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
 
-        <h6 className="mt-6 mb-6 lg:mt-10 text-sm lg:text-lg text-center text-neutral-500 max-w-4xl">
+        <motion.h6
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.7 }}
+          className="mt-6 mb-6 lg:mt-10 text-sm lg:text-lg text-center text-neutral-500 max-w-4xl"
+        >
           Please fill out this form to contact us. Our employee will reach you
           shortly!
-        </h6>
+        </motion.h6>
       </div>
 
       <StudentForm />

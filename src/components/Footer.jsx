@@ -3,7 +3,7 @@ import { platformLinks, communityLinks } from "../constants";
 const Footer = () => {
   return (
     <footer className="mt-10 bg-red-700">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto py-4 px-8 md:px-0">
         <div className="grid sm:grid-cols-2 gap-4 border-b border-neutral-100 py-6">
           <div className="flex flex-col">
             <h1 className="text-3xl font-bold">Jaft Developers</h1>
