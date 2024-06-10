@@ -188,7 +188,7 @@ const Home = () => {
             <h1 className="font-bold text-lg py-4 text-red-700">Explore</h1>
             <h1 className="text-3xl">Why Jaft Developers?</h1>
             <p className="py-4 font-thin text-justify">
-              Jest Developers is an emerging player in the offshore software
+              Jaft Developers is an emerging player in the offshore software
               development industry, dedicated to offering innovative software
               solutions to clients worldwide.
             </p>
@@ -232,7 +232,7 @@ const Home = () => {
             <h1 className="font-bold text-lg py-4 text-red-700">For You</h1>
             <h1 className="text-3xl">Why We Are The Right-Fit?</h1>
             <p className="py-4 font-thin text-justify">
-              At Jest Developers, we deliver innovative, tailored solutions that
+              At Jaft Developers, we deliver innovative, tailored solutions that
               meet your unique needs. Our commitment to quality ensures reliable
               and efficient results.
             </p>

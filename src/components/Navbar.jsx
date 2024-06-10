@@ -2,10 +2,11 @@ import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const location = useLocation();
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
@@ -32,7 +33,11 @@ const Navbar = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="mx-4 text-lg text-white hover:text-red-700 active:text-red-700 ease-in-out duration-500"
+                className={`mx-4 text-lg hover:text-red-700 ease-in-out duration-500 ${
+                  location.pathname === item.href
+                    ? "text-red-700"
+                    : "text-white"
+                }`}
               >
                 <Link
                   to={item.href}
@@ -65,7 +70,11 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="py-4 text-sm md:text-lg uppercase text-gray-200 hover:text-white"
+                  className={`py-4 text-sm md:text-lg uppercase hover:text-white ${
+                    location.pathname === item.href
+                      ? "text-red-700"
+                      : "text-gray-200"
+                  }`}
                 >
                   <Link to={item.href} onClick={closeNavbar}>
                     {item.label}

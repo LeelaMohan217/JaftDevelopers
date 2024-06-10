@@ -17,7 +17,7 @@ const About = () => {
           className="py-4 md:py-10 px-4 md:px-10"
         >
           <h1 className="text-2xl md:text-4xl font-thin">Our Story</h1>
-          <p className="text-sm font-thin py-2 md:py-4">
+          <p className="text-base font-thin py-2 md:py-4">
             Jaft Developers was founded in 2024 with a vision to revolutionize
             the software industry. Our journey began with a small team of
             passionate developers and has grown into a leading software
@@ -43,21 +43,21 @@ const About = () => {
         >
           <div>
             <h1 className="text-2xl md:text-4xl font-thin ">Our Mission</h1>
-            <p className="text-sm font-thin py-4">
+            <p className="text-base font-thin py-4">
               To empower businesses through cutting-edge software solutions that
               enhance efficiency, productivity, and growth.
             </p>
           </div>
           <div>
             <h1 className="text-2xl md:text-4xl font-thin">Our Vision</h1>
-            <p className="text-sm font-thin py-4">
+            <p className="text-base font-thin py-4">
               To be the most trusted partner for businesses seeking
               technology-driven transformation and success.
             </p>
           </div>
           <div>
             <h1 className="text-2xl md:text-4xl font-thin">What We Do?</h1>
-            <p className="text-sm font-thin py-4">
+            <p className="text-base font-thin py-4">
               At Jaft Developers, we specialize in delivering a wide range of
               software services tailored to meet your unique business needs. Our
               expertise includes custom software development, user-friendly
